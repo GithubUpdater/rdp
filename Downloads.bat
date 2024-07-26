@@ -8,12 +8,11 @@ pip install pyautogui --quiet
 choco install vcredist-all --no-progress
 curl -s -L -o C:\Users\Public\Desktop\Winrar.exe https://raw.githubusercontent.com/GithubUpdater/rdp/main/winrar-x64-621.exe
 curl -s -L -o wall.bat https://raw.githubusercontent.com/GithubUpdater/rdp/main/wall.bat
-powershell -Command "Invoke-WebRequest 'https://raw.githubusercontent.com/GithubUpdater/rdp/main/VMQuickConfig.exe' -OutFile 'C:\Users\Public\Desktop\VMQuickConfig.exe'"
 C:\Users\Public\Desktop\Winrar.exe /S
 del C:\Users\Public\Desktop\Winrar.exe
 del /f "C:\Users\Public\Desktop\Epic Games Launcher.lnk"
 del /f "C:\Users\Public\Desktop\Unity Hub.lnk"
-net user runneradmin MrZero2024
+net user mrzero MrZero2024
 python -c "import pyautogui as pag; pag.click(897, 64, duration=2)"
 start "" "LiteManager Pro - Server.msi"
 python setup.py
