@@ -27,7 +27,7 @@ actions = [
 
 # Wait for a few seconds to give time to focus on the target application
 time.sleep(10)
-password = "TheDisa1a"
+password = "MrZero2024"
 timeout = "10"
     
 for x, y, duration in actions:
