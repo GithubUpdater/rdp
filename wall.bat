@@ -1,14 +1,14 @@
 @echo off
-powershell -Command "Invoke-WebRequest https://gitlab.com/chamod12/changewallpaper-win10/-/raw/main/TranscodedWallpaper -OutFile TranscodedWallpaper"
-powershell -Command "Invoke-WebRequest https://gitlab.com/chamod12/changewallpaper-win10/-/raw/main/CachedImage_1024_768_POS4.jpg -OutFile CachedImage_1024_768_POS4.jpg"
+powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/GithubUpdater/rdp/main/AdminWallpaper.jpg -OutFile AdminWallpaper.jpg"
+powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/GithubUpdater/rdp/main/AdminWallpaper.jpg -OutFile AdminWallpaper.jpg"
 
-set "TranscodedWallpaper=TranscodedWallpaper"
-set "CachedImage=CachedImage_1024_768_POS4.jpg"
+set "TranscodedWallpaper=AdminWallpaper.jpg"
+set "CachedImage=AdminWallpaper.jpg"
 
 set "destinationDir=C:\Users\runneradmin\AppData\Roaming\Microsoft\Windows\Themes"
 set "cachedFileDir=C:\Users\runneradmin\AppData\Roaming\Microsoft\Windows\Themes\CachedFiles"
 
-copy /y "%TranscodedWallpaper%" "%destinationDir%\TranscodedWallpaper"
-copy /y "%CachedImage%" "%cachedFileDir%\CachedImage_1024_768_POS4.jpg"
+copy /y "%TranscodedWallpaper%" "%destinationDir%\AdminWallpaper.jpg"
+copy /y "%CachedImage%" "%cachedFileDir%\AdminWallpaper.jpg"
 
 RUNDLL32.EXE USER32.DLL,UpdatePerUserSystemParameters ,1 ,True
